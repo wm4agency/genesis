@@ -1,0 +1,145 @@
+.footer {
+    $footer-background: #93948f;
+    $footer-color: $tw;
+    $footer-link-color: transparentize($footer-color, 0.6);
+    $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+    background: $footer-background;
+    background-image: url("../img/maze-black.png");
+    background-position: top left;
+    background-repeat:repeat;
+    background-size: none;
+    padding: ($base-spacing * 2) $gutter;
+    width: 100%;
+
+    h1, h2, h3, h4, h5 {
+        color: $dark-gray;
+    }
+        
+    .footer-logo {
+        margin-bottom: 2em;
+        text-align: center;
+
+        img {
+            height: 3em;
+        }
+    }
+    
+    div#footer-widgets{
+        margin-bottom: 3em;
+        
+        section#featureds-widget{
+            color:$dark-gray;
+            
+            h3{
+               font-size: 1.15em; 
+            }
+            
+            article{
+                margin:.5em 0;
+                
+                figcaption{
+                    
+                    h2{
+                        text-align: left;
+                        font-size: 0.75em;
+                    }
+                    
+                    p{  
+                        color: inherit;
+                        text-align: center;
+                        font-size: 0.5em;
+                        
+                        span{
+                            width: 48%;
+                            float: left;
+                            padding: 0 0.5em;
+                            border-right: 1px solid $dark-gray;
+                            
+                            &:last-child{
+                                border-right: none ;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        
+        section#instafeed{
+            color: $dark-gray;
+            
+            figure{
+                width: 100%;
+            }
+            
+            figcaption{
+                text-align: left;
+                font-size: 1em;
+            }
+        }
+        
+        nav{
+            border-right: 1px dashed $dark-gray;
+            border-left: 1px dashed $dark-gray;
+            padding: 1em;
+        }
+        
+        form{
+            background: $light-gray;
+            border: 1px solid $w;
+            padding: 2em;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: $base-spacing;
+    }
+
+    ul {
+//        flex-basis: 13em;
+//        flex-shrink: 0;
+        margin-bottom: $base-spacing * 2;
+        padding: 0;
+    }
+
+    li {
+        line-height: 1.5em;
+        list-style: none;
+        text-align: left;
+    }
+
+    li a {
+        color: $footer-link-color;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            color: $action-color;
+        }
+    }
+
+    li h3 {
+        color: $footer-color;
+        font-size: 1em;
+        margin-bottom: 0.4em;
+    }
+
+    hr {
+        border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+        margin: 0 auto $base-spacing;
+        width: 100%;
+    }
+
+    p {
+        color: $footer-disclaimer-color;
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin: auto;
+        max-width: 35em;
+        text-align: center;
+    }
+}

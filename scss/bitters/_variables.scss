@@ -1,0 +1,51 @@
+// Typography
+$sans-serif: 'Questrial', sans-serif;
+$serif: 'Sanchez', serif;
+$base-font-family: $sans-serif;
+$heading-font-family: $base-font-family;
+
+
+// Font Sizes
+$base-font-size: .85em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$terra:#DB3600;
+$blue: #173442;
+$w:#FAFAFA;
+$tw:#ffffff;
+$dark-gray: #262626 !default;
+$medium-gray: #898A8A !default;
+$light-gray: #dCdAdA !default;
+
+// Font Colors
+$action-color: $terra !default;
+$base-font-color: $dark-gray !default;
+
+// Border
+$base-border-radius: 3px !default;
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: lighten($base-border-color, 10%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+//screens
+$medium-screen: 40em !default;
+$large-screen: 53.75em !default;
+
+
